@@ -8,9 +8,9 @@ internal static class JsonTree
     {
         var issue = (count, depth, value) switch
         {
-            ( > 100, _, _) => "Maximum count is 100",
+            ( > 200, _, _) => "Maximum count is 200",
             ( < 1, _, _) => "Minimum count is 1",
-            (_, > 20, _) => "Maximum depth is 20",
+            (_, > 40, _) => "Maximum depth is 40",
             (_, < 1, _) => "Minimum depth is 1",
             (int c, int d, _) when c < d => "Count can not be less than depth",
             (_, _, string s) when s.Length > 100 => "Maximum value length is 100",
