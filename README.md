@@ -20,7 +20,7 @@ If you prefer to run it on your own machine:
 
 `docker pull radddan/formatest:latest`
 
-`docker run radddan/formatest:latest`
+`docker run -p 8080:8080 radddan/formatest:latest`
 
 ## Tech
 
