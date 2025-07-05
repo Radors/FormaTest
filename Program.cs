@@ -18,8 +18,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.MapGet("/{count}/{depth}/{value}",
-    Results<Ok<JsonObject>, BadRequest<string>> (int count, int depth, string value) =>
+app.MapGet("/generate", Results<Ok<JsonObject>, BadRequest<string>> 
+    (int count, int depth, string value) =>
     {
         if (JsonTree.ValidateRequest(count, depth, value) is string issue)
         {
