@@ -4,11 +4,11 @@ FormaTest is an API for generating test data in the the form of JSON trees with 
 
 ## Usage
 
-Endpoint `/generate` expects 3 query parameters: `count`, `depth`, `value`.
+Endpoint `/generate` accepts GET requests with 3 query parameters: `count`, `depth`, `value`.
 
 The API is live at `formatest.enrau.com/generate`
 
-`formatest.enrau.com/generate?count=100&depth=20&value=arbitrary`
+`curl "https://formatest.enrau.com/generate?count=100&depth=20&value=arbitrary"`
 
 * `count` is total number of nodes.
 * `depth` is maximum depth.
